@@ -129,6 +129,8 @@ header {
     padding-left: 10px;
 
     z-index: 10;
+
+    gap: 1rem;
 }
 
 .nav-item {
@@ -140,26 +142,90 @@ header {
 
     border-radius: 50px;
 
-    margin-right: 37px;
+    margin-right: 1rem;
+
+    z-index: -10;
 
 }
 
-.nav-link {
+/* .nav-link {
     text-decoration: none;
 
     line-height: 1.5em;
 
-    padding: 30px 50px;
+    padding: 2rem 3rem;
 
-    font-size: 4.125em;
+    font-size: 3.125em;
 
     font-weight: 656;
 
     transition: 1s;
 
+    text-transform: uppercase;
+
     font-family: '.SF Compact Rounded', "Arial", sans-serif;
 
-}
+} */
+
+
+
+/*  */
+.nav-link {
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    transform: translate(0%, 0%); 
+    
+    
+    text-align: center;
+    line-height: 1.5em;
+    padding: 1rem 3rem;
+    color: #fff;
+    font-size: 3.125em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 656;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    background-position: 400%;
+    border-radius: 50px;
+    font-family: '.SF Compact Rounded', "Arial", sans-serif;
+
+    /* z-index: -1; */
+  }
+  .nav-link :hover {
+    animation: animateBtn 9s linear infinite;
+    cursor: pointer;
+  }
+  @keyframes animateBtn {
+    0% {
+      background-position: 400%;
+    }
+    100% {
+      background-position: 0%;
+    }
+  }
+  .nav-link:before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    right: -7px;
+    bottom: -7px;
+    z-index: -2;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 50px;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  a:hover:before {
+    opacity: 1;
+    filter: blur(20px);
+    animation: animateBtn 9s linear infinite;
+  }
+/*  */
 
 .navigation div:last-child {
 
@@ -527,6 +593,101 @@ main {
     transition: .5s;
 }
 
+@media (min-width: 1025px) and (max-width: 1250px) {
+    .nft-content-container {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem;
+        max-height: none;
+        height: 100%;
+    }
+    
+    .nft-pic {
+        width: 100%; 
+        margin-left: 0px;
+    }
+
+    .nft-pic-container {
+        max-width: none;
+    }
+
+    .nft-left {
+        width: 100%;
+        padding: 0px 1rem;
+    }
+    
+    .nft-right {
+        width: 100%;
+        padding: 5px 1rem;
+    }
+    
+    .nft-text-container-1 {
+        width: 100%;
+        text-align: right;
+        padding: 0rem 5px;
+    }
+    
+    .nft-text-container-2 {
+        width: 100%;
+        text-align: left;
+        padding: 0rem 5px;
+        display: flex;
+        justify-content: flex-start;
+        height: auto;
+    }
+    
+    .nft-text-container-3 {
+        width: 100%;
+        text-align: right;
+        padding: 0rem 5px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .nft-text-container-4 {
+        width: 100%;
+        text-align: right;
+        padding: 1rem 5px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 4rem;
+    }
+    
+    .nft-text-1 {
+        color: #DC93FF;
+        font-size: 2.875em;
+        max-width: 450px;
+        text-align: left;
+    }
+    
+    .nft-text-2 {
+        color: #E7D3BF;
+        font-size: 2.875em;
+        max-width: 450px;
+        text-align: left;
+    }
+    
+    .nft-text-3 {
+        color: #09A5CB;
+        font-size: 2.875em;
+        max-width: 450px;
+        text-align: right;
+    }
+    
+    .nft-text-4 {
+        color: #E3AE1F;
+        font-size: 2.875em;
+        max-width: 450px;
+        text-align: right;
+    }
+}
+
+/* P2E */
+
 .p2e {
     text-align: center;
     background-image: url("./assets/p2e-bg.webp");
@@ -605,7 +766,14 @@ main {
     width: 100%;
 }
 
-
+@media (max-width: 1150px) {
+    .meowverse-heading {
+        font-size: 11em;
+    }    
+    .meowverse-text {
+        font-size: 2em;
+    }
+}
 
 /* ROADMAP */
 
@@ -723,7 +891,6 @@ main {
 .partnerships-content-container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     text-align: center;
     max-width: 1920px;
     margin: 0 auto;
@@ -784,7 +951,6 @@ main {
 .team-container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     max-width: 1920px;
     margin: 0 auto;
 }
