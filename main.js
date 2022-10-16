@@ -2,7 +2,7 @@
 
 let roadmapAnimItems = document.querySelectorAll(".roadmap_list_item");
 
-const  onEntry = (entry) => {
+const onEntry = (entry) => {
 
     entry.forEach(change => {
 
@@ -67,7 +67,7 @@ window.onscroll = function () {
             el.style.marginBottom = '0px'
         }
 
-	if (currentScrollPos < 600) {
+        if (currentScrollPos < 600) {
             homeArrow.style.top = "-300px"
         }
 
@@ -89,18 +89,35 @@ window.onscroll = function () {
 }
 
 // MEOWVERSE Animation
+const hiddenElements = document.querySelectorAll(".hidden");
 
 const observerMeowverse = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-      } else {
-        entry.target.classList.remove("visible");
-      }
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+        } else {
+            entry.target.classList.remove("visible");
+        }
     });
-  });
-  
-  const hiddenElements = document.querySelectorAll(".hidden");
-  hiddenElements.forEach((element) => {
+});
+
+hiddenElements.forEach((element) => {
     observerMeowverse.observe(element);
-  });
+});
+
+// LAUNCHER Animation
+const gamePictures = document.querySelectorAll(".card-pic-pic");
+
+const observerLauncher = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("big-game");
+        } else {
+            entry.target.classList.remove("big-game");
+        }
+    });
+});
+
+gamePictures.forEach((element) => {
+    observerLauncher.observe(element);
+});
