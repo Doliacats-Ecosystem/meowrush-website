@@ -281,8 +281,12 @@ main {
     font-size: 2em;
 }
 
+.meowrush-text:nth-child(1) {
+    padding-bottom: 0;
+}
+
 .meowrush-text:nth-child(2) {
-    padding-top: 0;
+    padding-top: 1rem;
 }
 
 .meowrush-picture {
@@ -343,6 +347,11 @@ main {
     cursor: pointer;
     box-shadow: 	RGB(2,173,209) 0px 10px 11px, 	RGB(2,173,209) 0px -12px 30px, 	RGB(2,173,209)  0px 4px 6px, 	RGB(2,173,209) 0px 12px 13px, 	RGB(2,173,209)  0px -3px 5px;
     transition: .5s;
+}
+
+.play-btn:active {
+    scale: .9;
+    transition: .3s;
 }
 
 
@@ -423,6 +432,11 @@ main {
     cursor: pointer;
     box-shadow: 	RGB(2,173,209) 0px 20px 21px, 	RGB(2,173,209) 0px -12px 30px, 	RGB(2,173,209)  0px 4px 6px, 	RGB(2,173,209) 0px 12px 13px, 	RGB(2,173,209)  0px -3px 5px;
     transition: .5s;
+}
+
+.play-btn2:active {
+    scale: .9;
+    transition: .3s;
 }
 
 .nft {
@@ -595,6 +609,11 @@ main {
     transition: .5s;
 }
 
+.buy-btn:active {
+    scale: .9;
+    transition: .3s;
+}
+
 /* P2E */
 
 .p2e {
@@ -685,7 +704,34 @@ main {
     width: 100%;
 }
 
+/* MEOWVERSE ANIMATION */
 
+.logo {
+    --logo-animation-time: 1s;
+    --logo-animation-delay: 0s;
+    transition: all var(--logo-animation-time);
+    transition-delay: var(--logo-animation-delay);
+}
+
+.logo:nth-child(2) {
+    --logo-animation-delay: 0.25s;
+}
+
+.logo:nth-child(3) {
+    --logo-animation-delay: 0.5s;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(-100%);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0%);
+    filter: blur(0);
+}
 
 /* ROADMAP */
 
