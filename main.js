@@ -28,9 +28,6 @@ for (let el of roadmapAnimItems) {
 }
 
 
-
-
-
 // NAVIGATION MOBILE
 
 function menuOnClick() {
@@ -38,7 +35,6 @@ function menuOnClick() {
     document.getElementById("nav").classList.toggle("change");
     document.getElementById("menu-bg").classList.toggle("change-bg");
 }
-
 
 
 //HIDING mobile MENU while scrolling
@@ -88,6 +84,7 @@ window.onscroll = function () {
     prevScrollpos = currentScrollPos;
 }
 
+
 // MEOWVERSE Animation
 const hiddenElements = document.querySelectorAll(".hidden");
 
@@ -105,6 +102,7 @@ hiddenElements.forEach((element) => {
     observerMeowverse.observe(element);
 });
 
+
 // LAUNCHER Animation
 const gamePictures = document.querySelectorAll(".card-pic-pic");
 
@@ -121,3 +119,21 @@ const observerLauncher = new IntersectionObserver((entries) => {
 gamePictures.forEach((element) => {
     observerLauncher.observe(element);
 });
+
+
+// PRELOADER
+
+
+window.onload = function () {
+
+    document.body.classList.add('loaded_hiding');
+
+    window.setTimeout(function () {
+
+        // document.body.classList.add('loaded');
+
+        // document.body.classList.remove('loaded_hiding');
+
+    }, 500);
+
+}
