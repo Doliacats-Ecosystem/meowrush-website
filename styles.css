@@ -23,33 +23,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ::-webkit-scrollbar {
-
-    width: 5px;
-
-}
-
-::-webkit-scrollbar:hover {
-
-    width: 20px;
-
-}
-
-::-webkit-scrollbar-track {
-
-    background-color: rgba(38, 251, 255, 0);
-
-}
-
-::-webkit-scrollbar-thumb {
-
-    background-color: rgba(2, 7, 36, 1);
-
-    border-radius: 30px;
-
-} */
-
-
 header {
     max-width: 1920px;
     margin: 0 auto;
@@ -69,19 +42,12 @@ body {
 
     color: #fff;
 
-    /* max-width: 1920px; */
-
     position: relative;
 
     margin: 0 auto;
-
-
-
 }
 
-section {
-    /* max-width: 1920px; */
-}
+
 
 a {
     text-decoration: none;
@@ -143,7 +109,7 @@ header {
     line-height: 1.5em;
     padding: 1rem 3rem;
     color: #08042E;
-    font-size: 3.125em;
+    font-size: 2.125em;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 656;
@@ -225,7 +191,6 @@ a:hover:before {
     display: none;
 }
 
-
 main {
     display: flex;
     flex-direction: column;
@@ -239,8 +204,10 @@ main {
 }
 
 .top-video-container {
-
+    z-index: -1;
     margin-bottom: 40px;
+    overflow: visible !important;
+
 }
 
 .top-video {
@@ -277,12 +244,19 @@ main {
     font-size: 1.9em;
 }
 
+.meowrush-picture-container {
+    overflow: visible;
+}
+
 .meowrush-picture {
     margin-top: -390px;
     margin-bottom: -180px;
     width: 50%;
     max-width: 836px;
     max-height: 627px;
+    -webkit-transform: translate3d(0,0,0);
+    z-index: 999;
+    
 }
 
 .play-btn-container {
@@ -1250,7 +1224,7 @@ h1 {
     height: 100vh;
     background: rgba(2, 7, 36, 1);
     z-index: 5001;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
