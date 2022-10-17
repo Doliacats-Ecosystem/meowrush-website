@@ -1258,13 +1258,6 @@ h1 {
     align-items: center;
 }
 
-.preloader-text {
-    font-size: 4em;
-    padding-bottom: 12rem;
-    font-family: '.SF Compact Rounded';
-    color: #5865F2;
-}
-
 .loader {
     position: absolute;
     top: 50%;
@@ -1279,7 +1272,7 @@ h1 {
     background: #3ac;
     border-radius: 100%;
     display: inline-block;
-    animation: slide 1s infinite;
+    animation: slide 1s 30;
 }
 
 .dot:nth-child(1) {
