@@ -361,7 +361,7 @@ main {
 
 .launcher {
     text-align: center;
-    background-image: url("./assets/meowrush-bg.png");
+    background-image: url("./assets/meowrush-bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -510,7 +510,7 @@ main {
 
 .nft {
     text-align: center;
-    background-image: url("./assets/nft-bg.png");
+    background-image: url("./assets/nft-bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
