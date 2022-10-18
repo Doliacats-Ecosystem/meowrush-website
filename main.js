@@ -31,9 +31,17 @@ for (let el of roadmapAnimItems) {
 // NAVIGATION MOBILE
 
 function menuOnClick() {
-    document.getElementById("menu-bar").classList.toggle("change");
-    document.getElementById("nav").classList.toggle("change");
-    document.getElementById("menu-bg").classList.toggle("change-bg");
+    const a = navigator.vendor.includes("Apple") || navigator.vendor.includes("apple")
+
+    if (a) {
+        document.getElementById("menu-bar").classList.toggle("change");
+        document.getElementById("nav").classList.toggle("change");
+        document.getElementById("menu-bg").classList.toggle("change-bg-safari");
+    } else {
+        document.getElementById("menu-bar").classList.toggle("change");
+        document.getElementById("nav").classList.toggle("change");
+        document.getElementById("menu-bg").classList.toggle("change-bg");
+    }
 }
 
 
@@ -83,24 +91,6 @@ window.onscroll = function () {
 
     prevScrollpos = currentScrollPos;
 }
-
-
-// MEOWVERSE Animation
-const hiddenElements = document.querySelectorAll(".hidden");
-
-const observerMeowverse = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-        } else {
-            entry.target.classList.remove("visible");
-        }
-    });
-});
-
-hiddenElements.forEach((element) => {
-    observerMeowverse.observe(element);
-});
 
 
 // LAUNCHER Animation
