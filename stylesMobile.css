@@ -257,7 +257,9 @@ main {
 .top-video-container {
     margin-bottom: 40px;
     z-index: -1;
-    overflow: visible !important;
+    /* overflow: visible !important; */
+    position: relative;
+
 }
 
 .top-video {
@@ -276,6 +278,15 @@ main {
     max-height: 50vh;
 
     margin-top: 45px;
+    opacity: .6;
+
+}
+.top-video-background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-height: 1080px;
+    background-color: red;
 }
 
 .meowrush-block {
