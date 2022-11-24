@@ -106,10 +106,9 @@ header {
 .nav-link {
     transform: translate(0%, 0%);
     text-align: center;
-    line-height: 1.5em;
     padding: 1rem 3rem;
     color: #08042E;
-    font-size: 2.125em;
+    font-size: 2em;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 656;
@@ -251,13 +250,14 @@ main {
 }
 
 .meowrush-picture {
-    margin-top: -390px;
-    margin-bottom: -180px;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 50%;
     max-width: 836px;
     max-height: 627px;
     -webkit-transform: translate3d(0,0,0);
-    z-index: 999;
+    z-index: 2;
     
 }
 
@@ -279,7 +279,7 @@ main {
 
 .play-btn {
     background-color: #5865F2;
-    font-size: 4.125em;
+    font-size: 3.5em;
     font-weight: 656;
     border: none;
     text-transform: uppercase;
@@ -464,7 +464,7 @@ main {
 
 .nft-heading {
     color: #FFC993;
-    font-size: 12.5em;
+    font-size: 10.5em;
     font-family: ".SF Compact Rounded";
     padding-top: 50px;
     text-transform: uppercase;
@@ -764,7 +764,7 @@ main {
 
 .p2e-heading {
     color: #FFC993;
-    font-size: 12.5em;
+    font-size: 10.5em;
     font-family: ".SF Compact Rounded";
     padding-top: 50px;
     text-transform: uppercase;
@@ -780,7 +780,7 @@ main {
 .p2e-pic-container {
     margin-bottom: 5.6rem;
     max-width: 1920px;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -807,7 +807,7 @@ main {
 
 .roadmap-heading {
     color: #FFC993;
-    font-size: 12.5em;
+    font-size: 10.5em;
     font-family: ".SF Compact Rounded";
     text-transform: uppercase;
     margin-bottom: 5rem;
@@ -883,61 +883,6 @@ main {
 }
 
 
-/* PARTNERSHIPS */
-
-.partnerships {
-    background-color: #020724;
-    border-radius: 50px;
-    width: 100%;
-    text-align: center;
-    margin-top: -50px;
-    z-index: 1;
-}
-
-.partnerships-heading {
-    color: #FFC993;
-    font-size: 12.5em;
-    font-family: ".SF Compact Rounded";
-    text-transform: uppercase;
-    margin-bottom: 5rem;
-    max-width: 1920px;
-    margin: 0 auto;
-}
-
-.partnerships-content-container {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    max-width: 1920px;
-    margin: 0 auto;
-    padding-bottom: 3.5rem;
-}
-
-.partnerships-content {
-    width: 30%;
-}
-
-.partner-pic {
-    width: 100%;
-}
-
-.partner {
-    color: #5EC0F8;
-    text-transform: uppercase;
-    font-size: 3.125em;
-    margin: 2rem 0 1rem;
-}
-
-.partner-text {
-    font-size: 1.875em;
-    max-width: 391px;
-    margin: 0 auto;
-}
-
-.partner-link {
-    color: #fff;
-}
-
 
 /* TEAM */
 
@@ -959,7 +904,7 @@ main {
 
 .team-heading {
     color: #FFC993;
-    font-size: 12.5em;
+    font-size: 10.5em;
     font-family: ".SF Compact Rounded";
     text-transform: uppercase;
     margin-bottom: 5rem;
@@ -970,13 +915,14 @@ main {
 .team-container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     max-width: 1920px;
     margin: 0 auto;
 
 }
 
 .member-container {
-    width: 22%;
+    width: 15%;
 }
 
 .avatar {
@@ -986,7 +932,7 @@ main {
 }
 
 .occupation {
-    font-size: 3.125em;
+    font-size: 2.125em;
     font-family: '.SF Compact Rounded';
     padding: 1rem 0;
 }

@@ -294,7 +294,7 @@ main {
     width: 100%;
     border-radius: 50px;
     max-height: 500px;
-    margin-top: -4rem;
+    margin-top: -2rem;
 }
 
 .meowrush-text {
@@ -317,7 +317,9 @@ main {
 }
 
 .meowrush-picture {
-    margin-top: -8rem;
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 50%;
     max-width: 836px;
     max-height: 627px;
@@ -496,7 +498,7 @@ main {
 
 .play-btn2 {
     background-color: #5865F2;
-    font-size: 4.125em;
+    font-size: 3.5em;
     font-weight: 656;
     border: none;
     text-transform: uppercase;
@@ -668,7 +670,7 @@ main {
 .buy-btn {
     background-color: #F2B458;
     color: #000;
-    font-size: 4.125em;
+    font-size: 3.5em;
     font-weight: 656;
     text-transform: uppercase;
     border: none;
@@ -828,63 +830,6 @@ main {
 }
 
 
-/* PARTNERSHIPS */
-
-.partnerships {
-    background-color: #020724;
-    border-radius: 50px;
-    width: 100%;
-    text-align: center;
-    margin-top: -50px;
-    z-index: 1;
-}
-
-.partnerships-heading {
-    color: #FFC993;
-    font-size: 5.5em;
-    font-family: ".SF Compact Rounded";
-    padding-top: 1rem;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-    max-width: 480px;
-}
-
-.partnerships-content-container {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    max-width: 480px;
-    margin: 0 auto;
-    padding-bottom: 3rem;
-}
-
-.partnerships-content {
-    width: 30%;
-}
-
-.partner-pic {
-    width: 100%;
-}
-
-.partner {
-    color: #5EC0F8;
-    text-transform: uppercase;
-    font-size: 3.125em;
-    margin: 2rem 0 1rem;
-}
-
-.partner-text {
-    font-size: 1.2em;
-    margin: 0 auto;
-}
-
-.contentgrows-span {
-    font-size: 0.7em;
-}
-
-.partner-link {
-    color: #fff;
-}
 
 /* TEAM */
 
