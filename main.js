@@ -12,7 +12,6 @@ const onEntry = (entry) => {
 
         } else {
             change.target.classList.remove('show')
-
         }
     });
 }
