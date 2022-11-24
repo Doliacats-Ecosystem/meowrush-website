@@ -108,7 +108,7 @@ header {
     text-align: center;
     padding: 1rem 3rem;
     color: #08042E;
-    font-size: 2em;
+    font-size: 1em;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 656;
@@ -221,11 +221,10 @@ main {
 
     padding: 0;
 
-    border-radius: 50px;
+    height: 100vh;
 
     max-height: 1080px;
 
-    margin-top: 45px;
     opacity: .6;
 }
 
@@ -249,8 +248,15 @@ main {
     overflow: visible;
     position: absolute;
     top: 0;
-    width: 30%;
+    width: 40%;
+    height: 100vh;
+    max-height: 1080px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7%;
 }
 
 .near {
@@ -267,12 +273,10 @@ main {
 }
 
 .meowrush-picture {
-    /* position: absolute; */
-    /* top: 0;
-    left: 0; */
     width: 100%;
     max-width: 836px;
     max-height: 627px;
+    margin-top: -15rem;
     -webkit-transform: translate3d(0,0,0);
     z-index: 2;
     

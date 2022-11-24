@@ -266,11 +266,8 @@ main {
 
     padding: 0;
 
-    border-radius: 50px;
-
     max-height: 50vh;
     
-    margin-top: 45px; 
     opacity: .6;
 }
 
@@ -309,35 +306,61 @@ main {
 
 .meowrush-picture-container {
     overflow: visible;
+    z-index: 29;
+    position: absolute;
+    top: 0;
+    width: 40%;
+    height: 40vh;
+    max-height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.near {
+    margin-top: -1rem;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.near2 {
+    font-size: 2.1em;
+    font-weight: bold;
+    color: #ffa21d;
+    line-height: 1;
 }
 
 .meowrush-picture {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
+    width: 100%;
     max-width: 836px;
     max-height: 627px;
     z-index: 30;
 }
 
-@media (min-width: 990px) {
-    .meowrush-picture-safari {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        -webkit-transform: translate(0%, -60%);
-        margin: 0;
+ @media (min-width: 660px) {
+    .near {
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+    
+    .near2 {
+        font-size: 3em;
+        font-weight: bold;
+        color: #ffa21d;
+        line-height: 1;
     }
 }
 
-.meowrush-picture-safari {
+/* .meowrush-picture-safari {
     position: absolute;
     top: 50%;
     left: 0;
     -webkit-transform: translate(0%, -60%);
     margin: 0;
-}
+}  */
 
 
 
@@ -394,6 +417,8 @@ main {
     font-family: '.SF Compact Rounded', "Arial", sans-serif;
     margin-top: -2rem;
     transition: .5s;
+    color: #000;
+
 }
 
 .play-btn:hover {
@@ -546,6 +571,7 @@ main {
     padding: 1rem 4rem;
     font-family: '.SF Compact Rounded', "Arial", sans-serif;
     transition: .5s;
+    color: #000;
 }
 
 .play-btn2:hover {
