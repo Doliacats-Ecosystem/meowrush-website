@@ -247,13 +247,30 @@ main {
 
 .meowrush-picture-container {
     overflow: visible;
+    position: absolute;
+    top: 0;
+    width: 30%;
+    text-align: center;
+}
+
+.near {
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: -2.5rem
+}
+
+.near2 {
+    font-size: 4em;
+    font-weight: bold;
+    color: #ffa21d;
+    line-height: 1;
 }
 
 .meowrush-picture {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+    width: 100%;
     max-width: 836px;
     max-height: 627px;
     -webkit-transform: translate3d(0,0,0);
