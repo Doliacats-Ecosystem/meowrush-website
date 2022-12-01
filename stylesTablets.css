@@ -320,18 +320,6 @@ main {
     margin-left: 5%;
 }
 
-.near {
-    margin-top: -1rem;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.near2 {
-    font-size: 2.1em;
-    font-weight: bold;
-    color: #ffa21d;
-    line-height: 1;
-}
 
 .meowrush-picture {
     width: 100%;
@@ -340,19 +328,6 @@ main {
     z-index: 30;
 }
 
- @media (min-width: 660px) {
-    .near {
-        font-size: 2.5em;
-        font-weight: bold;
-    }
-    
-    .near2 {
-        font-size: 3em;
-        font-weight: bold;
-        color: #ffa21d;
-        line-height: 1;
-    }
-}
 
 /* .meowrush-picture-safari {
     position: absolute;

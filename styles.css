@@ -256,30 +256,14 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 7%;
-}
-
-.near {
-    font-size: 3em;
-    font-weight: bold;
-    margin-top: -2.5rem
-}
-
-.near2 {
-    font-size: 4em;
-    font-weight: bold;
-    color: #ffa21d;
-    line-height: 1;
+    margin-left: 5%;
 }
 
 .meowrush-picture {
     width: 100%;
     max-width: 836px;
     max-height: 627px;
-    margin-top: -15rem;
-    -webkit-transform: translate3d(0,0,0);
-    z-index: 2;
-    
+    z-index: 2; 
 }
 
 .meowrush-picture-safari {

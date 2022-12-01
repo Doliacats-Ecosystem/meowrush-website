@@ -324,21 +324,8 @@ main {
     margin-left: 4%;
 }
 
-.near {
-    margin-top: -1rem;
-    font-size: 1em;
-    font-weight: bold;
-}
-
-.near2 {
-    font-size: 2em;
-    font-weight: bold;
-    color: #ffa21d;
-    line-height: 1;
-}
-
 .meowrush-picture {
-    margin-top: -6rem;
+    margin-top: -8rem;
     width: 100%;
     max-width: 836px;
     max-height: 627px;
